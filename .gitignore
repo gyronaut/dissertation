@@ -7,3 +7,6 @@
 *.toc
 *.idx
 *.log
+*.bcf
+*.out
+*.xml
