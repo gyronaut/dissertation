@@ -77,10 +77,18 @@
 
 \mainmatter
 
-\chapter{Start}
+% intro chapter
+\include {jtblair_chapter_intro}
+
+\chapter{More}
+
 A good thesis has references \cite{bib:somebook}. Usually siting a name, such as \textcite{bib:someart}. The best citation is autocite, since it always gets the spacing right \autocite{bib:somethesis}.
 
 \lipsum[3]
+\begin{figure}
+This is a figure.
+\caption[This]{This is a caption.}
+\end{figure}
 \section{One}
 \subsection{Mini}
 \section{Two}
@@ -89,13 +97,7 @@ A good thesis has references \cite{bib:somebook}. Usually siting a name, such as
 \section{Three}
 \section{This is very very very very very very long to test the guideline for wrapping in the table of contents}
 
-\chapter{More}
-\lipsum[3]
-\begin{figure}
-This is a figure.
-\caption[This]{This is a caption.}
-\end{figure}
-
+% chapter for experimental overview
 \include{jtblair_chapter_experiment}
 
 \begin{appendix}
