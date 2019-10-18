@@ -10,3 +10,8 @@
 *.bcf
 *.out
 *.xml
+*.ins
+*.txt
+*.glo
+*.hd
+*.cwl
