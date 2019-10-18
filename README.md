@@ -5,6 +5,7 @@
 **utthesis.cls** - class file with ut thesis style settings
 
 **utthesis.dtx** - documentation file.  To extract .cls file and additional instructional PDF (as well as other files), run command:
-   $ pdflatex utthesis.dtx
+
+    $ pdflatex utthesis.dtx
     
 
