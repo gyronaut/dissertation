@@ -1,0 +1,127 @@
+% !TeX document-id = {f3146876-9a53-4f56-9560-e6295d649f82}
+% !TeX program = pdflatex
+% !TeX TXS-program:bibliography = txs:///biber
+% !TeX encoding = utf8
+
+
+\documentclass{utthesis}
+
+% If you use luatex (better)
+% \usepackage[utf8]{inputenc}
+
+\usepackage[%
+	backend=biber,
+	style=ieee,
+	maxbibnames=4,
+	minbibnames=1,
+	maxcitenames=3,
+	mincitenames=1,
+	backref=true
+	]{biblatex}
+
+\addbibresource{refs.bib}
+
+\usepackage{lipsum} % Dummy text for examples
+\usepackage{graphicx}
+
+% This should be the last package you load
+\usepackage[hidelinks]{hyperref} % Handy for links, can comment for plain PDF
+
+\UTyear=2020
+
+\makeindex
+
+\graphicspath{{./images/}}
+
+\errorcontextlines 10000
+
+\begin{document}
+
+\author{Justin Thomas Blair} 
+\title{Very Important Title For a Very Important Thesis} 
+\date{Revised: \today}
+
+\frontmatter
+
+\UTcopyrightlegend % Optional
+
+\begin{UTcommittee}
+\UTaddsupervisor{Christina Markert}
+\UTaddcommittee{Irene Gamba}
+\UTaddcommittee{Sonia Paban}
+\UTaddcommittee{Peter Onyisi}
+\end{UTcommittee}
+
+\UTtitlepage{B.S.}{May}
+
+\setcounter{page}{4}
+
+
+\UTdedication{Dedicated to some random person.}
+
+%\include{acknowledgements}
+%\include{preface}
+
+\begin{UTabstract}*[]{Christina Markert}
+    \include{jtblair_abstract}
+\end{UTabstract}
+
+
+% add . to include section numbers (non-standard)
+\tableofcontents
+%\tableofcontents.
+
+\listoffigures
+%\listoftables
+%\listoflistings (with listings package)
+
+\mainmatter
+
+\chapter{Start}
+A good thesis has references \cite{bib:somebook}. Usually siting a name, such as \textcite{bib:someart}. The best citation is autocite, since it always gets the spacing right \autocite{bib:somethesis}.
+
+\lipsum[3]
+\section{One}
+\subsection{Mini}
+\section{Two}
+\subsection{Miny}
+\subsubsection{Mo}
+\section{Three}
+\section{This is very very very very very very long to test the guideline for wrapping in the table of contents}
+
+\chapter{More}
+\lipsum[3]
+\begin{figure}
+This is a figure.
+\caption[This]{This is a caption.}
+\end{figure}
+
+\include{jtblair_chapter_experiment}
+
+\begin{appendix}
+
+\chapter{First}
+\lipsum[3]
+
+\chapter{Second}
+\section{Part one}
+\lipsum[3]
+\section{Part two}
+\begin{figure}
+This is an empty figure.
+\caption[That]{This is also a caption.}
+\end{figure}
+
+\end{appendix}
+
+\backmatter
+
+\printindex
+
+\cleardoublepage
+\phantomsection
+
+\printbibliography
+
+
+\end{document}
