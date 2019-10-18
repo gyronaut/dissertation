@@ -1,4 +1,4 @@
-###Repo for UT Austin Disseration in Relativistic Heavy Ion Physics
+### Repo for UT Austin Disseration in Relativistic Heavy Ion Physics
 
 **samplethesis.tex** - sample thesis with examples for chapters/style guides
 
